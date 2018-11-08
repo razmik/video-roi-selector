@@ -1,11 +1,21 @@
-from os import listdir
-from os.path import isfile, join, isdir
+"""
+Copy the data set into the original dataset folder (i.e., root_folder_path)
+All the video frames will be copied to new folder (out_folder)
+- Duplicated frames will be removed automatically.
+- Frame numbering will update to universal 6-digit system.
+"""
+
+from os import listdir, makedirs
+from os.path import isfile, join, isdir, exists
 from shutil import copyfile
 from tqdm import tqdm
 
 root_folder_path = "E:\Data\Vollyball_data/original".replace('\\', '/')
 out_folder = "E:\Data\Vollyball_data/all".replace('\\', '/')
 
+# Create out directory if not exists
+if not exists(out_folder):
+    makedirs(out_folder)
 
 if __name__ == '__main__':
 

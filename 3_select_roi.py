@@ -1,4 +1,9 @@
+"""
+Select start and end frames, and run the algorithm.
+You will prompt each frame within the selected range, for ROI (region of interest) selection.
+All the selected ROI's will be recorded in 'data' folder with the respective frame name.
 # https://www.learnopencv.com/how-to-select-a-bounding-box-roi-in-opencv-cpp-python/
+"""
 from os import listdir
 from os.path import isfile, join
 from tqdm import tqdm
