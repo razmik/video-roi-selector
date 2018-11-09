@@ -14,8 +14,8 @@ root_folder_path = "E:\Data\Vollyball_data/all".replace('\\', '/')
 out_folder = 'data/'
 
 player_id = 1
-start_frame = 9527
-end_frame = 9561
+start_frame = 9870
+end_frame = 9901
 
 allowed_range = list(range(start_frame, end_frame+1))
 
